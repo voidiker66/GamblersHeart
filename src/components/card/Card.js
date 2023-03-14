@@ -29,7 +29,6 @@ export class Card {
         this.getFaceValue = function() {
             let suitValue = Math.floor(this.value / this.SUIT_TOTAL)
             let faceValue = this.value % this.SUIT_TOTAL
-            console.log(this.value + " % " + this.SUIT_TOTAL + " = " + faceValue)
             return {
                 suit: this.suits[suitValue],
                 face: this.convertValueToFace(faceValue)
